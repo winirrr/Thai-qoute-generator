@@ -1,0 +1,135 @@
+header{
+    background-color: #3D0C11;
+    padding: 10px;
+    height: 50px;
+    position: relative
+    
+}
+#htext{
+    color: white;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 20px;
+    
+}
+
+.upper-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full height of the viewport */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation effect */
+}
+
+.upper-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation effect */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F78CA2;
+    height: 100%;
+    margin: 0;
+    
+}
+
+.centerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px); /* Adjust this value based on your header height */
+    background-color: #F9DEC9;
+    padding: 10px; /* Symmetric spacing on left and right */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+.input{
+    padding: 20px; /* Padding around the content */
+   
+    
+}
+
+.input textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for the textarea */
+    margin-bottom: 10px; /* Spacing between elements */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  }
+
+input[type=submit]:hover {
+    background-color: #D80032;
+  }
+
+  .sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+
+
+form {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.output {
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+

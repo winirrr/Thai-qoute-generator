@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="upper-left">
+            <h1 id="htext">คำคม คำใจ</h1>
+        </div>
+        <div class="upper-right"></div>
+    </header>
+    <div class="centerbox">
+        <div class="input">
+            <form action="/generate" method="post">
+                <label for="input_text">พิมพ์มาโลด......</label><br>
+                <textarea id="input_text" name="input_text" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="ขอคำคม">
+            </form>
+        </div>
+        <div class="output">
+            {% if input_text %}
+                <h2>ขอมา:</h2>
+                <p>{{ input_text }}</p>
+            {% endif %}
+            {% if generated_text %}
+                <h2>คำคมโดนใจ:</h2>
+                <p>{{ generated_text }}</p>
+            {% endif %}
+        </div>
+    </div>
+    
+</body>
+</html>
